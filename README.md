@@ -14,7 +14,7 @@ This repository is the **starting point for each student’s personal project** 
 
 ### GitHub Pages
 
-- Students enable Pages on their repo to publish their project live at a URL like `https://username.github.io/project`.
+- Students enable Pages on their repo to publish their project live at a URL like `https://github.com/JuConti/PortfolioTemplate.git`.
 - Automatic deployment: every commit to `main` updates the live site.
 
 ### Jekyll
