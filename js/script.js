@@ -12,8 +12,39 @@ document.addEventListener("DOMContentLoaded", () => {
                 top: targetElement.offsetTop,
                 behavior: "smooth"
             });
+
+            // Close mobile menu after clicking a link
+            const menuToggle = document.getElementById("menu-toggle");
+            if (menuToggle.checked) {
+                menuToggle.checked = false;
+            }
         });
     });
+
+    // Active state indication based on scroll position
+    const sections = document.querySelectorAll("section[id]");
+    const navItems = document.querySelectorAll(".navbar a");
+
+    function setActiveLink() {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navItems.forEach(item => {
+            item.classList.remove("active");
+            if (item.getAttribute("href").slice(1) === current) {
+                item.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", setActiveLink);
+    setActiveLink(); // Set initial active state
     
 // Image growth animation for highlight section
 const highlightImages = document.querySelectorAll(".highlight-images .image-container img");
