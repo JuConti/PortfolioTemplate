@@ -1,0 +1,32 @@
+/* Grid Styles */
+
+.portfolio-container {
+  display: grid;
+}
+
+.portfolio-container {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: start;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img,
+.portfolio-item video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto; /* Ensure each section sizes properly */
+  row-gap: 40px; /* Add space between sections */
+}

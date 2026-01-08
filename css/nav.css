@@ -1,0 +1,36 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #6e8efb;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid #6e8efb;
+}

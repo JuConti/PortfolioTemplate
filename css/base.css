@@ -1,0 +1,383 @@
+/* General Reset */
+body,
+h1,
+p,
+ul,
+li,
+a {
+  margin: 5;
+  padding: 5;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: url("https://ik.imagekit.io/juuconti/f-airjordan-1cover.png?updatedAt=1736375188878")
+    no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #9e41f0;
+}
+
+/* Hero Content */
+.hero-content svg {
+  width: 150px;
+  height: auto;
+  fill: #fff;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("https://ik.imagekit.io/juuconti/f-airjordan-12.png?updatedAt=1736371481397")
+    no-repeat center center/cover;
+  position: relative;
+}
+
+.home-content {
+  text-align: center;
+  color: white;
+  animation: fadeInUp 1.5s ease;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 70px;
+}
+
+.home-content h1 {
+  font-size: 0, 5rem;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 0px;
+  font-size: 1 rem;
+  color: white;
+  animation: fadeIn 3s infinite;
+}
+
+/* About Section */
+/* Parallax Container Styling */
+.parallax-container {
+  position: relative;
+  height: 80vh; /* Adjust height as needed */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Parallax Background */
+.parallax-background {
+  position: absolute;
+  top: -600px;
+  left: 0;
+  width: 100%;
+  height: 120%; /* Slightly larger for smoother scrolling */
+  background-size: cover;
+  background-position: center;
+  transform: translateY(0);
+  transition: transform 0.3s ease-out; /* Smooth scrolling effect */
+}
+
+/* Content Styling */
+.parallax-container .content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px; /* Optional: rounded corners for content box */
+}
+
+.parallax-container h2 {
+  font-size: 0, 2rem;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-style: uppercase;
+}
+
+.parallax-container p {
+  font-size: 18px;
+  line-height: 0, 5;
+  font-family: "Raleway", sans-serif;
+}
+
+.parallax h2 {
+  font-size: 1, 5rem;
+}
+
+.parallax-text {
+  font-size: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Parallax Container */
+
+/* Highlight Section */
+.highlight-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 100vh; /* Ensure the section takes full viewport height */
+  margin-bottom: 50px; /* Add spacing below the section */
+  background-color: #000; /* Background for better visibility */
+}
+
+.highlight-images {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  transition: transform 1.5s ease-out;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+  transform: scale(1.5);
+  transition: transform 1.5s ease-out;
+}
+
+.image-container.visible img {
+  transform: scale(1);
+}
+
+.image-title {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Add Horizontal Splitting Effect */
+@keyframes split-expand {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.image-container {
+  animation: split-expand 1.5s ease forwards;
+}
+
+/* Highlight Section */
+
+.portfolio {
+  padding: 50px 20px;
+  background: #ffffff;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-item img,
+.portfolio-item video {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.portfolio-description {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-description {
+  transform: translateY(0);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+  font-size: 18px;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover {
+  flex: 1 1 50%;
+}
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  padding: 50px 20px;
+  background: #e3e3e3;
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 0, 5rem;
+}
+
+.contact-form button {
+  background: #fb6ea2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
