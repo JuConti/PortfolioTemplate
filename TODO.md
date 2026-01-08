@@ -1,5 +1,15 @@
-# TODO: Add Responsive Hamburger Menu and Active State Indication
+# TODO for Portfolio Template About Section Update
 
-- [ ] Update index.html: Add hamburger button (checkbox toggle) inside the nav
-- [ ] Update css/nav.css: Add media queries for mobile (hide ul, show hamburger, slide-in menu styles)
-- [ ] Update js/script.js: Add menu toggle logic on hamburger click and active state indication based on scroll position
+## Tasks
+
+- [x] Modify the "about" section in index.html to include a brief bio/introduction and skills/technologies grid for a graphic design portfolio template.
+- [x] Replace the current project-specific content with placeholder bio text.
+- [x] Add a skills grid with common graphic design tools/technologies (e.g., Adobe Photoshop, Illustrator, etc.).
+- [x] Ensure the parallax effect and styling are maintained.
+- [x] Test the changes by opening the page to verify layout.
+
+## Notes
+
+- The bio will be a generic placeholder that users can customize.
+- Skills grid will list popular graphic design tools as examples.
+- Added CSS for the skills grid to ensure proper styling.

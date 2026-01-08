@@ -76,6 +76,23 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: #fb6ea2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e55a8b;
+}
+
 .home {
   display: flex;
   align-items: center;
@@ -154,6 +171,30 @@ body {
   font-size: 18px;
   line-height: 0, 5;
   font-family: "Raleway", sans-serif;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .parallax h2 {
