@@ -11,25 +11,26 @@
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  align-items: stretch;
 }
 
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: #fff;
+  min-height: 400px;
 }
 
 .portfolio-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .grid-image-container {
@@ -55,12 +56,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
   color: white;
-  padding: 20px;
+  padding: 25px;
   transform: translateY(100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-align: center;
+  backdrop-filter: blur(10px);
 }
 
 .portfolio-item:hover .portfolio-overlay {
@@ -68,39 +70,51 @@
 }
 
 .portfolio-overlay h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.2rem;
-  font-weight: 600;
+  margin: 0 0 15px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .portfolio-overlay p {
-  margin: 0 0 15px 0;
-  font-size: 0.9rem;
-  line-height: 1.4;
+  margin: 0 0 20px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  opacity: 0.9;
 }
 
 .portfolio-links {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .demo-link,
 .repo-link {
   display: inline-block;
-  padding: 8px 16px;
-  background-color: #fb6ea2;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #fb6ea2, #e55a8b);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(251, 110, 162, 0.3);
+  border: 2px solid transparent;
 }
 
 .demo-link:hover,
 .repo-link:hover {
-  background-color: #e55a8b;
+  background: linear-gradient(135deg, #e55a8b, #fb6ea2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(251, 110, 162, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .grid-container {

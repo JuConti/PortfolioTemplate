@@ -130,7 +130,7 @@ body {
 /* Parallax Container Styling */
 .parallax-container {
   position: relative;
-  height: 80vh; /* Adjust height as needed */
+  height: 90vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -140,37 +140,43 @@ body {
 /* Parallax Background */
 .parallax-background {
   position: absolute;
-  top: -600px;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 120%; /* Slightly larger for smoother scrolling */
+  height: 100%;
   background-size: cover;
   background-position: center;
-  transform: translateY(0);
-  transition: transform 0.3s ease-out; /* Smooth scrolling effect */
+  will-change: transform;
 }
 
 /* Content Styling */
 .parallax-container .content {
   position: relative;
   z-index: 1;
-  padding: 2rem;
-  text-align: center;
+  max-width: 800px;
+  padding: 3rem;
+  text-align: left;
   color: #fff;
-  border-radius: 10px; /* Optional: rounded corners for content box */
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .parallax-container h2 {
-  font-size: 0, 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   font-family: "Raleway", sans-serif;
-  font-style: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .parallax-container p {
-  font-size: 18px;
-  line-height: 0, 5;
+  font-size: 1.1rem;
+  line-height: 1.6;
   font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-bottom: 2rem;
 }
 
 /* Skills Grid */
@@ -185,9 +191,12 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 10px;
   border-radius: 5px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   font-weight: 300;
+  line-height: 1.2;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: background-color 0.3s ease;
@@ -399,6 +408,46 @@ body {
   text-align: center;
   padding: 20px;
   font-size: 18px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quick-links h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fb6ea2;
+}
+
+.github-link {
+  text-align: center;
+}
+
+.copyright {
+  text-align: right;
 }
 
 /* Animations */
