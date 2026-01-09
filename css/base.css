@@ -21,12 +21,12 @@ body {
 /* Hero Section */
 .hero-section {
   height: 100vh;
-  background: url("https://ik.imagekit.io/juuconti/f-airjordan-1cover.png?updatedAt=1736375188878")
+  background: url("https://ik.imagekit.io/juuconti/645c2220-374f8-4de3-b5a3-37ac817c7330.png")
     no-repeat center center/cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   position: relative;
   text-align: center;
   color: #fff;
@@ -63,6 +63,11 @@ body {
 }
 
 /* Hero Content */
+.hero-content {
+  text-align: left;
+  margin-left: 20px;
+}
+
 .hero-content svg {
   width: 150px;
   height: auto;
@@ -71,9 +76,11 @@ body {
 }
 
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  text-align: left;
 }
 
 .cta-button {
