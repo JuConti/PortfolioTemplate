@@ -74,7 +74,7 @@ highlightImages.forEach(img => observer.observe(img));
   if (parallaxContainer && parallaxBackground) {
       window.addEventListener("scroll", () => {
           const offset = window.scrollY;
-          const parallaxSpeed = 0.3;
+          const parallaxSpeed = 0.1;
           console.log(`Applying transform: translateY(${offset * parallaxSpeed}px)`);
           parallaxBackground.style.transform = `translateY(${offset * parallaxSpeed}px)`;
       });
