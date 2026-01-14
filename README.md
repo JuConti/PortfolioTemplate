@@ -4,7 +4,7 @@ Welcome to my portfolio web! This project showcases my portfolio and a glimpse o
 
 ## Demo
 
-You can view the live site at: [https://juconti.github.io/MyPortfolioProject/](https://juconti.github.io/MyPortfolioProject/)
+You can view the live site at: [https://juconti.github.io/MyPortfolioProject/](https://juconti.github.io/PortfolioTemplate/)
 
 ## Features
 
@@ -25,5 +25,4 @@ To get a local copy of this project, follow these steps:
 1. Clone the repo:
    ```bash
    git clone https://github.com/JuConti/MyPortfolioProject.git
-
-
+   ```
